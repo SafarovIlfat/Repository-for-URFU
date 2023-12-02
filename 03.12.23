@@ -2,21 +2,21 @@
 using namespace std;
 
 double* createArray(int size) 
-    return new double[size];
+return new double[size];
 
 void fillArray(double* arr, int size) 
-    for (int i = 0; i < size; i++)
-    { 
-        cout << "Значение для элемента под номером" << i << ": ";
-        cin >> arr[i];
-    } 
+for (int i = 0; i < size; i++)
+{ 
+    cout << "Значение для элемента под номером" << i << ": ";
+    cin >> arr[i];
+} 
 void printArray(double* arr, int size) 
-    for (int i = 0; i < size; i++)
-    { 
-        cout << arr[i] << " ";
-    } 
+for (int i = 0; i < size; i++)
+{ 
+    cout << arr[i] << " ";
+} 
 void freeArray(double* arr) 
-    delete[] arr;
+delete[] arr;
 
 
 int main()
@@ -28,10 +28,10 @@ int main()
         cout << "Размер массива: ";
         cin >> size;
         double* arr = createArray(size);
-				fillArray(arr, size);
-				cout << "Элементы массива: ";
+	fillArray(arr, size);
+	cout << "Элементы массива: ";
         printArray(arr, size);
-				freeArray(arr);
+	freeArray(arr);
     } 
     cout << "Начать заново (1) или закончить работу (0)?: ";
     cin >> choice;
